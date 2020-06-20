@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.signup_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="37dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Hello there, sign up to continue."
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp" />
+
+        <EditText
+            android:id="@+id/signup_name"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/ed_bg"
+            android:fontFamily="@font/roboto"
+            android:hint="Enter your name"
+            android:paddingLeft="18dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto"
+            android:text="Email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/signup_email"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/ed_bg"
+            android:fontFamily="@font/roboto"
+            android:hint="Enter your email address"
+            android:paddingLeft="18dp"
+
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/ed_bg"
+            android:fontFamily="@font/roboto"
+            android:hint="Set your password"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:textStyle="bold"
+            android:textSize="13dp"/>
+
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/roboto"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                 />
+
+            <TextView
+                android:id="@+id/signuptoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Log in"
+                android:linksClickable="true"
+                android:textColor="#1730BF"
+                android:textStyle="bold"
+                android:onClick="jumpToLogin"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</TableLayout>

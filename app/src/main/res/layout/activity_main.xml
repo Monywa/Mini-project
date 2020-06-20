@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1730BF"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/card_bg"
+                app:cardCornerRadius="19dp"
+                android:layout_marginBottom="-12dp"
+                app:cardElevation="0dp"
+                >
+               <com.google.android.material.tabs.TabLayout
+                   android:id="@+id/tablayout_id"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   app:tabIndicatorColor="#1730BF"
+                   app:tabTextAppearance="@style/customTextTab">
+               </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    >
+
+                </androidx.viewpager.widget.ViewPager>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

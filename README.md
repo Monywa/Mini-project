@@ -1,0 +1,1 @@
+This is the mini project android app using kotlin and developed by hein htet (UCSMonywa)
